@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="node0" Label="Bernoulli(0,5)" FontSize="9" Foreground="Black" Background="Empty" Shape="None" />
+    <Node Id="node1" Label="Random" FontSize="8" Foreground="White" Background="Black" NodeRadius="0" />
+    <Node Id="node2" Label="firstCoin" FontSize="10" Foreground="Blue" Background="Empty" NodeRadius="0" />
+    <Node Id="node3" Label="And" FontSize="8" Foreground="White" Background="Black" NodeRadius="0" />
+    <Node Id="node4" Label="secondCoin" FontSize="10" Foreground="Blue" Background="Empty" NodeRadius="0" />
+    <Node Id="node5" Label="False" FontSize="10" Foreground="Blue" Background="Empty" Shape="None" />
+    <Node Id="node6" Label="Bernoulli(0,5)" FontSize="9" Foreground="Black" Background="Empty" Shape="None" />
+    <Node Id="node7" Label="Random" FontSize="8" Foreground="White" Background="Black" NodeRadius="0" />
+  </Nodes>
+  <Links>
+    <Link Source="node0" Target="node1" Label="dist" FontSize="8" />
+    <Link Source="node1" Target="node2" Label="" FontSize="8" />
+    <Link Source="node2" Target="node3" Label="a" FontSize="8" />
+    <Link Source="node4" Target="node3" Label="b" FontSize="8" />
+    <Link Source="node3" Target="node5" Label="" FontSize="8" />
+    <Link Source="node6" Target="node7" Label="dist" FontSize="8" />
+    <Link Source="node7" Target="node4" Label="" FontSize="8" />
+  </Links>
+</DirectedGraph>
